@@ -60,9 +60,12 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
   array = []
-  holiday_hash.each do |season, holiday|
-
+  holiday_hash.each do |key, value|
+    value.each do |key2, value2|
+      array << value2
+    end
   end
+  array
 end
 
 def all_holidays_with_bbq(holiday_hash)
@@ -70,3 +73,15 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
 
 end
+
+
+
+
+
+
+
+
+
+
+
+
