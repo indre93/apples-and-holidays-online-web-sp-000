@@ -69,7 +69,6 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |key, value|
     value.delete_if {|key2, value2| key2 != "BBQ"}
       array << key2
-    end
   end
   array
 end
