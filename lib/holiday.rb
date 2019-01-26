@@ -70,6 +70,7 @@ def all_holidays_with_bbq(holiday_hash)
     value.each do |key2, value2|
       if value2 == "BBQ"
         array << key2
+      end
     end
   end
   array
